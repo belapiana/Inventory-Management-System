@@ -22,17 +22,18 @@ function displayProductDetails (input) {
 
 displayProductDetails("Chocolate");
 
-// // Task 3: Create a Function to Update Product Stock After Sales
+// Task 3: Create a Function to Update Product Stock After Sales
 
-// function updateStock (input, unitsSold) {
-//     product = inventory.find(element => element.name === input);
-//     console.log(`New quantity after units sold: ${product.quantity-unitsSold}`)
-//     if (product.quantity > product.lowStockLevel) 
-//         {console.log(`In Stock`)}
-//     else {console.log(`Low Stock`)}
-// };
+function updateStock (input, unitsSold) {
+    product = inventory.find(element => element.name === input);
+    product.quantity -= unitsSold;
+    console.log(`New quantity after units sold: ${product.quantity}`)
+    if (product.quantity > product.lowStockLevel) 
+        {console.log(`In Stock`)}
+    else {console.log(`Low Stock`)}
+};
 
-// updateStock("Chocolate", 24);
+updateStock("Lolipop", 24);
 
 // // Task 4: Create a Function to Check Low Stock Products
 
