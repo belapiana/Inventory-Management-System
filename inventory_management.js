@@ -61,11 +61,11 @@ console.log(`Total Inventory Value: ${totalValue}`)
 
 calculateInventoryValue(inventory)
 
-// // Task 6: Create a Function to Process a Sale
+// Task 6: Create a Function to Process a Sale
 
-// function processSale (input, unitsSold) {
-//     const product = inventory.find(element => element.name === input);
-//     updateStock(product, unitsSold);
-// };
+function processSale (input, unitsSold) {
+    const product = inventory.find(element => element.name === input);
+    updateStock(input, unitsSold);
+};
 
-// console.log(processSale ("Gummie Bears, 7"));
+processSale ("Gummie bears", 7);
