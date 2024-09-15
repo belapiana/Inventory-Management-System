@@ -49,17 +49,17 @@ let itemsStock= true
 
 checkLowStock(inventory)
 
-// // Task 5: Create a Function to Calculate Total Inventory Value
+// Task 5: Create a Function to Calculate Total Inventory Value
 
-// function calculateInventoryValue (inventory) {
-// let totalValue = 0
-// inventory.forEach (item => {
-// totalValue += (item.quantity * item.price)
-// });
-// console.log(`Total Inventory Value: ${totalValue}`)
-// };
+function calculateInventoryValue (inventory) {
+let totalValue = 0
+inventory.forEach (item => {
+return totalValue += (item.quantity * item.price)
+});
+console.log(`Total Inventory Value: ${totalValue}`)
+};
 
-// calculateInventoryValue(inventory)
+calculateInventoryValue(inventory)
 
 // // Task 6: Create a Function to Process a Sale
 
