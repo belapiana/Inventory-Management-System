@@ -8,19 +8,19 @@ const inventory = [
 { name: 'Gummie bears', price: 3, quantity: 27, lowStockLevel: 16 }
 ];
 
-// // Task 2: Create a Function to Display Product Details
+// Task 2: Create a Function to Display Product Details
 
-// function displayProductDetails (input) {
-//     const product = inventory.find(element => element.name === input);
-//     if (product) {
-//     console.log(`Product: ${product.name}`);
-//     console.log(`Price:$${product.price}`);
-//     console.log(`Quantity:${product.quantity}`);
-//     console.log(product.quantity > product.lowStockLevel ? `In Stock` :`Low Stock`)}
-//     else {console.log(`Product not found`)};
-// };
+function displayProductDetails (input) {
+    const product = inventory.find(element => element.name === input);
+    if (product) {
+    console.log(`Product: ${product.name}`);
+    console.log(`Price:$${product.price}`);
+    console.log(`Quantity:${product.quantity}`);
+    console.log(product.quantity > product.lowStockLevel ? `In Stock` :`Low Stock`)}
+    else {console.log(`Product not found`)};
+};
 
-// displayProductDetails("Chocolate");
+displayProductDetails("Chocolate");
 
 // // Task 3: Create a Function to Update Product Stock After Sales
 
